@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <title>Smażalnia Ryb "U Czecha""</title>
+    <link rel="stylesheet" href="Style.css" />
+     
+    <center>
+        <img src="logo2.png" class="logo" />
+    </center>
+</head>
+
+<script>
+    function openTab(evt, cityName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tab");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("button");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "table";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+<body onload="openTab(event, 'zupy')">
+
+    <div class="mb">
+        <div class="mt">
+            <br />
+            <h1>menu</h1>
+            <button class="button" onclick="openTab(event, 'zupy')">
+                <p>ZUPY</p>
+            </button>
+            <button class="button" onclick="openTab(event, 'obiady')">
+                <p>OBIADY</p>
+            </button>
+            <button class="button" onclick="openTab(event, 'napoje')">
+                <p>NAPOJE</p>
+
+            </button>
+            <br /><br /><br /><br /><br />
+            <table id="zupy" class="tab" style="width:100%">
+                <tbody>
+                    <tr>
+                        <td width="10%">LP</td>
+                        <td width="80%">NAZWA DANIA</td>
+                        <td width="10%">CENA</td>
+                    </tr>
+
+                    <tr>
+                        <td>1.</td>
+                        <td>
+                            <h4>Rosół</h4>
+                        </td>
+                        <td>12.00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>
+                            <h4>Pomidorowa</h4>
+                        </td>
+                        <td>14.00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>
+                            <h4>Rybna</h4>
+                        </td>
+                        <td>20.00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>
+                            <h4>Cebulowa</h4>
+                        </td>
+                        <td>14.00 zł</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>
+                            <h4>Chłodnik</h4>
+                        </td>
+                        <td>20.00 zł</td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <table id="obiady" class="tab" style="width:100%">
+
+                <tr>
+                    <td width="10%">LP</td>
+                    <td width="80%">NAZWA DANIA</td>
+                    <td width="10%">CENA</td>
+                </tr>
+
+                <tr>
+                    <td>1.</td>
+                    <td>
+                        <h4>Flądra z frytkami i surówką (100g)</h4>
+                    </td>
+                    <td>9.00 zł</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>
+                        <h4>Dorsz z frytkami i surówką (200g)</h4>
+                    </td>
+                    <td>40.00 zł</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>
+                        <h4>Sandacz z frytkami i surówką (200g)</h4>
+                    </td>
+                    <td>40.00 zł</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>
+                        <h4>Pstrąg smażony z frytkami i surówką (?30g)</h4>
+                    </td>
+                    <td>44.00 zł</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>
+                        <h4>Halibut pieczony z frytkami i surówką (200g)</h4>
+                    </td>
+                    <td>42.00 zł</td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td>
+                        <h4>Łosoś pieczony z frytkami i surówką (200g)</h4>
+                    </td>
+                    <td>42.00 zł</td>
+                </tr>
+                <tr>
+                    <td>7.</td>
+                    <td>
+                        <h4>Schabowy z ziemniakami/frytkami i kapustą zasmażaną (120g)</h4>
+                    </td>
+                    <td>34.00 zł</td>
+                </tr>
+                <tr>
+                    <td>8.</td>
+                    <td>
+                        <h4>Filet z kurczaka panierowany z ziemniakami i surówką (120g)</h4>
+                    </td>
+                    <td>34.00 zł</td>
+                </tr>
+                <tr>
+                    <td>9.</td>
+                    <td>
+                        <h4>Karkówka grilowana z ziemniakami/frytkami i surówką (150g)</h4>
+                    </td>
+                    <td>37.00 zł</td>
+                </tr>
+                <tr>
+                    <td>10.</td>
+                    <td>
+                        <h4>Filet grilowany z ziemniakami/frytkami i surówką</h4>
+                    </td>
+                    <td>37.00 zł</td>
+                </tr>
+                <tr>
+                    <td>11.</td>
+                    <td>
+                        <h4>Placek po węgiersku ze śmietaną</h4>
+                    </td>
+                    <td>40.00 zł</td>
+                </tr>
+                <tr>
+                    <td>12.</td>
+                    <td>
+                        <h4>Golonka z kapustą zasmażaną</h4>
+                    </td>
+                    <td>45.00 zł</td>
+                </tr>
+                <tr>
+                    <td>13.</td>
+                    <td>
+                        <h4>Nuggetsy z kurczaka z frytkami i surówką</h4>
+                    </td>
+                    <td>20.00 zł</td>
+                </tr>
+                <tr>
+                    <td>14.</td>
+                    <td>
+                        <h4>Placki ziemniaczane ( 3 szt )</h4>
+                    </td>
+                    <td>18.00 zł</td>
+                </tr>
+                <tr>
+                    <td>15.</td>
+                    <td>
+                        <h4>Pierogi</h4>
+                    </td>
+                    <td>25.00 zł</td>
+                </tr>
+                <tr>
+                    <td>16.</td>
+                    <td>
+                        <h4>Frytki</h4>
+                    </td>
+                    <td>8.00 zł</td>
+                </tr>
+                <tr style="background-color: transparent; color: transparent;">
+                    <td>--</td>
+
+                </tr>
+            </table>
+            <table id="napoje" class="tab" style="width:100%">
+
+                <tr>
+                    <td width="10%">LP</td>
+                    <td width="80%">NAZWA DANIA</td>
+                    <td width="10%">CENA</td>
+                </tr>
+
+                <tr>
+                    <td>1.</td>
+                    <td>
+                        <h4>Herbata Richmont</h4>
+                    </td>
+                    <td>13.00 zł</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>
+                        <h4>Lemoniada</h4>
+                    </td>
+                    <td>12.00 zł</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>
+                        <h4>Świeżo wyciskany sok z pomarańczy</h4>
+                    </td>
+                    <td>25.00 zł</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>
+                        <h4>Pepsi, Fanta, Sprite</h4>
+                    </td>
+                    <td>8.00 zł</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>
+                        <h4>Soki</h4>
+                    </td>
+                    <td>6.00 zł</td>
+                </tr>
+
+            </table>
+
+        </div>
+        <br /><br /><br />  <br /><br /><br />
+        <div class="nmt">
+            <h1>Jesteśmy otwarci</h1>
+            <p>12.00 - 20.00</p>
+            <br />
+            <h1>Nasza lokal</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2344.736588162061!2d14.693202313031348!3d54.00745097237364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aa858778023fdf%3A0xb1094cb70a86f2ec!2sU%20Czecha!5e0!3m2!1sen!2spl!4v1714930532891!5m2!1sen!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="Map"></iframe>
+            <br />   <br />   <br />   <br />
+        </div>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+</body>
+
+</html>
