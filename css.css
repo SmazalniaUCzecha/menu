@@ -1,0 +1,137 @@
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: Consolas;
+    flex-direction: column;
+    min-height: 100vh;
+    display: flex;
+}
+h1
+{
+    font-size: 20px;
+}
+.button
+{
+    width: 100%;
+    height: 50px;
+    color:#4D869C;
+    font-size: 35px;
+    text-align: left;
+    background-color:#CDE8E5;
+    text-shadow: 0px 0px 5px #CDE8E5;
+    box-shadow: 0px 0px 10px 0px black;
+    border-color: transparent;
+    
+}
+
+.main
+{   
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #EEF7FF;
+}
+.image1
+{
+    width: 100%;
+    height: 20%;
+}
+.header
+{
+    display: flex;
+    flex-direction: row;
+}
+.hLeft
+{
+    width: 40%;
+}
+.hRight
+{
+    font-size: 15px;
+    gap:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}   
+
+.List
+{
+    overflow: hidden;
+
+    display: none;
+    height: 0px;
+    background-color: #EEF7FF;
+    z-index: -20;
+}
+
+@keyframes ListPull 
+{
+    0%
+    {
+        margin-left:20%;
+        height: 0px;
+        color:transparent;
+    }
+    100%
+    {
+        height: var(--target-height);
+        color:black;
+    }
+}
+
+@keyframes ListPullReverse
+{
+    0%
+    {
+        
+        height: var(--target-height);
+        color:black;
+    }
+    20%
+    {
+        margin-left:-10%;
+        color:transparent;
+    }
+    100%
+    {
+        height: 0px;
+        color:transparent;
+    }
+}
+
+
+
+
+.LP
+{
+    width: 20%;
+    text-align: center;
+}
+.ND
+{
+    width: 60%;
+}
+.CC
+{
+    width: 20%;
+}
+
+td,tr
+{
+    
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+}
+tr:nth-child(even)
+{
+    background-color:#CDE8E5;
+}
