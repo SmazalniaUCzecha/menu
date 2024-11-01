@@ -25,75 +25,42 @@
         <img src="placeholder.jpg" class="image1">
     </div>
     <div class="mMiddle">
-        <input type="button" value="DANIA GŁÓWNE" class="button" onclick="showTable(1)">
+
+        <div class="button">
+            <input type="button" class="buttonClickable" value="Dania Główne"  onclick="showTable(1)">
+            <img src="Arrow.png" class="arrow" id="arrow1">
+        </div>
         <div class="List" id="Mi">
-            <table class="tab" style="width:100%">
+            <div class="DBox">
+                <div class="DTytul">
+                    <h1 class="TDnazwa">Kurczak</h1>
+                    <h1 class="TDcena">32zł</h1>
+                </div>
+                <div class="DOpis">
+                    <h1 class="TDOpis">Kurczak,Surówka,Ziemniaki lub frytkiKurczak,Surówka,Ziemniaki </h1>
+                </div>
+            </div>
 
-                <tr>
-                    <td class="LP">LP</td>
-                    <td class="ND">NAZWA DANIA</td>
-                    <td class="CC">CENA</td>
-                </tr>
+            <div class="vertical-line">
+                <div class="line"></div>
+            </div>
 
-
-
-                <tr>
-                    <td>1.</td>
-                    <td>
-                        <h4>Schabowy</h4>
-                    </td>
-                    <td>35.00 zł</td>
-                </tr>
-                <tr>
-                    <td>2.</td>
-                    <td>
-                        <h4>Filet</h4>
-                    </td>
-                    <td>35.00 zł</td>
-                </tr>
-
-                <tr>
-                    <td>4.</td>
-                    <td>
-                        <h4>Karkówka</h4>
-                    </td>
-                    <td>38.00 zł</td>
-                </tr>
-                <tr>
-                    <td>5.</td>
-                    <td>
-                        <h4>Nuggetsy</h4>
-                    </td>
-                    <td>22.00 zł</td>
-                </tr>
-                <tr>
-                    <td>6.</td>
-                    <td>
-                        <h4>Placek</h4>
-                    </td>
-                    <td>45.00 zł</td>
-                </tr>
-                <tr>
-                    <td>7.</td>
-                    <td>
-                        <h4>Gulasz + Kopytka</h4>
-                    </td>
-                    <td>30.00 zł</td>
-                </tr>
-                <tr>
-                    <td>8.</td>
-                    <td>
-                        <h4>Golonka</h4>
-                    </td>
-                    <td>50.00 zł</td>
-                </tr>
-
-                <tr>
-            </table>
+            <div class="DBox">
+                <div class="DTytul">
+                    <h1 class="TDnazwa">Kurczak</h1>
+                    <h1 class="TDcena">32zł</h1>
+                </div>
+                <div class="DOpis">
+                    <h1 class="TDOpis">Kurczak,Surówka,Ziemniaki lub frytki</h1>
+                </div>
+            </div>
         </div>
 
 
-        <input type="button" value="RYBY" class="button" onclick="showTable(2)">
+        <div class="button">
+            <input type="button" class="buttonClickable" value="Ryby"  onclick="showTable(2)">
+            <img src="Arrow.png" class="arrow" id="arrow2">
+        </div>
         <div class="List" id="Rb">
             <table class="tab" style="width:100%">
 
@@ -155,9 +122,11 @@
                 </tr>
             </table>
         </div>
-
-
-        <input type="button" value="INNE" class="button" onclick="showTable(3)">
+        
+        <div class="button">
+            <input type="button" class="buttonClickable" value="Inne"  onclick="showTable(3)">
+            <img src="Arrow.png" class="arrow" id="arrow3">
+        </div>     
         <div class="List" id="In" >
             <table class="tab" style="width:100%">
 
@@ -206,8 +175,10 @@
                 </tr>
             </table>
         </div>
-
-        <input type="button" value="ZUPY" class="button" onclick="showTable(4)">
+        <div class="button">
+            <input type="button" class="buttonClickable" value="Zupy"  onclick="showTable(4)">
+            <img src="Arrow.png" class="arrow" id="arrow4">
+        </div>
         <div class="List" id="Zu">
             <table class="tab" style="width:100%">
                 <tbody>
@@ -278,8 +249,10 @@
                 </tbody>
             </table>
         </div>
-
-        <input type="button" value="NAPOJE" class="button" onclick="showTable(5)">
+        <div class="button">
+            <input type="button" class="buttonClickable" value="Napoje"  onclick="showTable(5)">
+            <img src="Arrow.png" class="arrow" id="arrow5">
+        </div>
         <div class="List" id="Na">
             <table  class="tab" style="width:100%">
 
@@ -342,8 +315,10 @@
               
             </table>
         </div>
-        
-        <input type="button" value="DODATKI" class="button" onclick="showTable(6)">
+        <div class="button">
+            <input type="button" class="buttonClickable" value="Dodatki"  onclick="showTable(6)">
+            <img src="Arrow.png" class="arrow" id="arrow6">
+        </div>
         <div class="List" id="Do">
 
             <table class="tab" style="width:100%">
@@ -395,25 +370,59 @@
         </div>
     </div>
     <div class="mBottom">
-        <p>test test</p>
+        <div class="DBox">
+            <div class="DTytul">
+                <h1 class="TDnazwa">Kurczak</h1>
+                <h1 class="TDcena">32zł</h1>
+            </div>
+            <div class="DOpis">
+                <h1 class="TDOpis">Kurczak,Surówka,Ziemniaki lub frytki</h1>
+            </div>
+        </div>
     </div>
 </div>
     
 
 
 <script>
-    let menu = [0,0,0,0,0,0]
 
+    let menu = [0,0,0,0,0,0]
     let Mi = document.getElementById("Mi")
     let Rb = document.getElementById("Rb")
     let In = document.getElementById("In")
     let Zu = document.getElementById("Zu")
     let Na = document.getElementById("Na")
     let Do = document.getElementById("Do")
+    let a1 = document.getElementById("arrow1")
+    let a2 = document.getElementById("arrow2")
+    let a3 = document.getElementById("arrow3")
+    let a4 = document.getElementById("arrow4")
+    let a5 = document.getElementById("arrow5")
+    let a6 = document.getElementById("arrow6")
+
     let b = false
     let tabs = [Mi,Rb,In,Zu,Na,Do]
+    let arrows = [a1,a2,a3,a4,a5,a6]
+    let canPlay = true;
+
+function delayTime()
+{
+    if(canPlay)
+    {
+    canPlay = false
+    setTimeout(() => {
+        canPlay = true
+    }, 750);
+    }
+}
 function showTable(x)
 {
+    
+if(canPlay)
+{
+
+    delayTime()
+
     x = x-1
     
 
@@ -430,81 +439,38 @@ if(b== true)
 }
 else
 {
-    switch(x+1)
-{  
-    case 1: 
-        menu[x] = 1
-        tabs[x].style.display = "block"
-        tabs[x].style.animation = "none"
-        tabs[x].offsetWidth;
-        tabs[x].offsetHeight;
-        tabs[x].style.setProperty('--target-height', height(x,1) )
-        tabs[x].style.animation = "ListPull 1s ease forwards"
-        break;
-    case 2:
-        menu[x] = 1
-        tabs[x].style.display = "block"
-        tabs[x].style.animation = "none"
-        tabs[x].offsetWidth;
-        tabs[x].offsetHeight;
-        tabs[x].style.setProperty('--target-height', height(x,1) )
-        tabs[x].style.animation = "ListPull 1s ease forwards"
-
-        break;
-    case 3:
-        menu[x] = 1
-        tabs[x].style.display = "block"
-        tabs[x].style.animation = "none"
-        tabs[x].offsetWidth;
-        tabs[x].offsetHeight;
-        tabs[x].style.setProperty('--target-height', height(x,1))
-        tabs[x].style.animation = "ListPull 1s ease forwards"
-
-        break;
-    case 4: 
-        menu[x] = 1
-        tabs[x].style.display = "block"
-        tabs[x].style.animation = "none"
-        tabs[x].offsetWidth;
-        tabs[x].offsetHeight;
-        tabs[x].style.setProperty('--target-height', height(x,1) )
-        tabs[x].style.animation = "ListPull 1s ease forwards"
-
-        break;
-    case 5:
-        menu[x] = 1
-        tabs[x].style.display = "block"
-        tabs[x].style.animation = "none"
-        tabs[x].offsetWidth;
-        tabs[x].offsetHeight;
-        tabs[x].style.setProperty('--target-height', height(x,1)) 
-        tabs[x].style.animation = "ListPull 1s ease forwards"
-
-
-        break;
-    case 6:
-        menu[x] = 1
-        tabs[x].style.display = "block"
-        tabs[x].style.animation = "none"
-        tabs[x].offsetWidth;
-        tabs[x].offsetHeight;
-        tabs[x].style.setProperty('--target-height', height(x,1) )
-        tabs[x].style.animation = "ListPull 1s ease forwards"
-
-
-        break;
-}
+    animate(x)
 }
    
-
+}
 
 }
+
+function animate(x)
+{
+    menu[x] = 1
+    tabs[x].style.display = "block"
+    tabs[x].style.animation = "none"
+    tabs[x].offsetWidth;
+    tabs[x].offsetHeight;
+    tabs[x].style.setProperty('--target-height', height(x,1) )
+    tabs[x].style.animation = "ListPull 1s ease forwards"
+    tabs[x].addEventListener("animationend", ()=> { tabs[x].style.animationPlayState = "Paused"})
+  
+    
+    arrows[x].style.animation = "none"
+    arrows[x].offsetWidth
+    arrows[x].style.animation = "ArrowDown  0.5s ease forwards"
+}
+
+
 function hide()
 {
     for(i = 0 ;i < tabs.length; i++)
 {
     if(menu[i] == 1)
 {
+    
     tabs[i].style.display = "block"
     tabs[i].style.animation = "none"
     tabs[i].offsetWidth;
@@ -512,13 +478,19 @@ function hide()
     tabs[i].style.setProperty('--target-height', height(i,2) )
     tabs[i].style.animation = "ListPullReverse 1s ease forwards"
     menu[i] = 0;
-    addEventListener("animationend", ()=> {tabs[i].style.display = "none";})
-}else
+    tabs[i].addEventListener("animationend", ()=> {tabs[i].style.display = "none";})
+    
+    arrows[i].style.animation = "none"
+    arrows[i].offsetWidth
+    arrows[i].style.animation = "ArrowUp 0.5s ease forwards"
+}
+else
 {
     tabs[i].style.display = "none"
 
 }
 }
+
 }
 function height(x,y)
 {
@@ -537,6 +509,7 @@ function height(x,y)
             break;
     }
 }
+
 
 </script>
 
